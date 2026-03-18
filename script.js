@@ -1,14 +1,18 @@
 function check() {
-  let n = document.getElementById("num").value;
+  const n = document.getElementById("num").value;
+  const result = document.getElementById("result");
 
   if (n === "") {
-    document.getElementById("result").innerText = "Please enter a number.";
+    result.innerText = "Please enter a number.";
+    result.style.color = "#e74c3c";
     return;
   }
 
-  if (n % 2 == 0) {
-    document.getElementById("result").innerText = "EVEN";
+  if (n % 2 === 0) {
+    result.innerText = "EVEN";
+    result.style.color = "#2ecc71";
   } else {
-    document.getElementById("result").innerText = "ODD";
+    result.innerText = "ODD";
+    result.style.color = "#e74c3c";
   }
 }
