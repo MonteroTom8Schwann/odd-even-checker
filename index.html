@@ -9,49 +9,32 @@ HTML is used to structure the content, CSS is used for styling,
 and JavaScript is used to add functionality and logic to the program.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Odd or Even Checker</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-      background: #f4f6f8;
-      color: #333;
-    }
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-    input {
-      padding: 10px;
-      width: 60%;
-      margin-bottom: 10px;
-      border: 2px solid #3498db;
-      border-radius: 5px;
-      text-align: center;
-    }
-    button {
-      padding: 10px 20px;
-      background: #3498db;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #2980b9;
-      transform: scale(1.05);
-    }
-    #result {
-      margin-top: 20px;
-      font-weight: bold;
-      font-size: 1.5em;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odd or Even Checker</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  input {
+    padding: 8px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  #result {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+</style>
 </head>
 <body>
 
@@ -71,16 +54,10 @@ function check() {
 
   if (n === "") {
     result.innerText = "Please enter a number.";
-    result.style.color = "#e74c3c";
-    return;
-  }
-
-  if (n % 2 === 0) {
+  } else if (n % 2 === 0) {
     result.innerText = "EVEN";
-    result.style.color = "#2ecc71";
   } else {
     result.innerText = "ODD";
-    result.style.color = "#e74c3c";
   }
 }
 </script>
