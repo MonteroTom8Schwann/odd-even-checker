@@ -12,30 +12,7 @@ and JavaScript is used to add functionality and logic to the program.
 <html>
 <head>
 <title>Odd or Even Checker</title>
-
-<style>
-body{
-  font-family: Arial;
-  text-align: center;
-  margin-top: 50px;
-}
-input{
-  padding: 8px;
-  width: 60%;
-  margin-bottom: 10px;
-}
-button{
-  padding: 8px 16px;
-  background: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-}
-#result{
-  margin-top: 15px;
-  font-weight: bold;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -45,9 +22,10 @@ button{
 <p>STE Department</p>
 
 <input type="number" id="num" placeholder="Enter number"><br>
-<button>Check</button>
+<button onclick="check()">Check</button>
 
 <p id="result">Result will appear here</p>
 
+<script src="script.js"></script>
 </body>
 </html>
