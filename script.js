@@ -1,5 +1,5 @@
 function check() {
-  let n = document.getElementById("numberInput").value;
+  let n = document.getElementById("num").value;
 
   if (n === "") {
     document.getElementById("result").innerText = "Please enter a number.";
