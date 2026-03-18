@@ -11,10 +11,48 @@ and JavaScript is used to add functionality and logic to the program.
 <!DOCTYPE html>
 <html>
 <head>
-<title>Odd or Even Checker</title>
-<link rel="stylesheet" href="style.css">
+  <title>Odd or Even Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background: #f4f6f8;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    input {
+      padding: 10px;
+      width: 60%;
+      margin-bottom: 10px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      background: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #2980b9;
+      transform: scale(1.05);
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  </style>
 </head>
-
 <body>
 
 <h1>Odd or Even Checker</h1>
@@ -26,6 +64,26 @@ and JavaScript is used to add functionality and logic to the program.
 
 <p id="result">Result will appear here</p>
 
-<script src="script.js"></script>
+<script>
+function check() {
+  const n = document.getElementById("num").value;
+  const result = document.getElementById("result");
+
+  if (n === "") {
+    result.innerText = "Please enter a number.";
+    result.style.color = "#e74c3c";
+    return;
+  }
+
+  if (n % 2 === 0) {
+    result.innerText = "EVEN";
+    result.style.color = "#2ecc71";
+  } else {
+    result.innerText = "ODD";
+    result.style.color = "#e74c3c";
+  }
+}
+</script>
+
 </body>
 </html>
