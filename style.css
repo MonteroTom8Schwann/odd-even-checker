@@ -1,24 +1,4 @@
-body { 
-  font-family: Arial; 
-  text-align: center; 
-  margin-top: 50px; 
-}
-
-input { 
-  padding: 8px; 
-  width: 60%; 
-  margin-bottom: 10px; 
-}
-
-button { 
-  padding: 8px 16px; 
-  background: #3498db; 
-  color: white; 
-  border: none; 
-  border-radius: 5px; 
-}
-
-#result { 
-  margin-top: 15px; 
-  font-weight: bold; 
-}
+body{font-family:Arial;text-align:center;margin-top:50px}
+input{padding:8px;width:60%;margin-bottom:10px}
+button{padding:8px 16px;background:#3498db;color:#fff;border:0;border-radius:5px}
+#result{margin-top:15px;font-weight:bold}
