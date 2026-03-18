@@ -1,4 +1,4 @@
-function checkNumber() {
+function check() {
   let n = document.getElementById("numberInput").value;
 
   if (n === "") {
